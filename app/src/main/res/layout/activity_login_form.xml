@@ -7,15 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".LoginForm">
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="269dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Last Name"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="328dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="406dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView"
@@ -28,37 +26,7 @@
         android:textColorHint="#F01919"
         android:textColorLink="#E70D0D"
         tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="68dp" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="268dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="First Name"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="254dp" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="267dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="400dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="266dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Password"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="484dp" />
+        tools:layout_editor_absoluteY="66dp" />
 
     <Button
         android:id="@+id/button"
@@ -77,5 +45,57 @@
         android:text="Join TomatoBasil now.It's free!"
         tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="209dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="110dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="First Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        app.passwordToggleEnabled="true"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="475dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
